@@ -734,25 +734,6 @@ li.bordered > ul > details > div {
     margin-right: -0.5em;
 }
 
-/* Timeline */
-.timeline {
-    list-style: none outside none;
-    padding: 0;
-    margin: 0;
-}
-.timeline:not(:last-child) {
-    margin-bottom: 1em;
-}
-.timeline > li:before {
-    display: none;
-}
-.timeline > li:not(:last-child) {
-    margin-bottom: 1em;
-}
-.timeline > li p {
-    margin: 0;
-}
-
 /* Tags */
 .tags.small {
     font-size: 0.88em;
