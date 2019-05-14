@@ -1,3 +1,10 @@
+html,
+body {
+    margin: 0;
+    line-height: 1.4285em;
+    color: #666054;
+}
+
 /* Avatar */
 .avatar-wrapper {
     padding: 0 1em;
@@ -7,11 +14,16 @@
     justify-content: center;
 }
 
+.contacts li a {
+    color: #b5977c;
+    transition: color 0.2s ease-in-out;
+}
+
 .contacts li a.mail:hover {
     color: #bf3a2c;
 }
 
 .divider.fat {
-    border-top: 0.3571428571428571em solid #e5b68b;
+    border-top: 0.3571428571428571em solid #c5bfb1;
     width: 33%;
 }
