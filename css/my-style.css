@@ -5,15 +5,28 @@ body {
     color: #666054;
 }
 
-/* Avatar */
-.avatar-wrapper {
-    padding: 0 1em;
-    padding-top: 1.3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+a {
+    color: #8c745e;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
+.contacts li a {
+    color: #b5977c;
+    text-decoration: none;
+}
+
+.timeline a:hover {
+    color: #0088cc;
+    text-decoration: none;
+}
+/* Avatar */
+.avatar-wrapper {
+    padding-top: 1.3em;
+}
+.avatar {
+    border-radius: 50%;
+}
 .contacts li a {
     color: #b5977c;
     transition: color 0.2s ease-in-out;
@@ -27,3 +40,26 @@ body {
     border-top: 0.3571428571428571em solid #c5bfb1;
     width: 33%;
 }
+
+ul.languages {
+    list-style: none;
+    padding-left: 0;
+}
+ul.languages > li:before {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.languages li{
+    display: flex;
+    flex-direction: row;
+
+}
+span.language {
+    margin-right: auto;
+    padding: 0;
+
+
+
