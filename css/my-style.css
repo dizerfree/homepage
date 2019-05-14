@@ -5,15 +5,28 @@ body {
     color: #666054;
 }
 
-/* Avatar */
-.avatar-wrapper {
-    padding: 0 1em;
-    padding-top: 1.3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+a {
+    color: #8c745e;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
+.contacts li a {
+    color: #b5977c;
+    text-decoration: none;
+}
+
+.timeline a:hover {
+    color: #0088cc;
+    text-decoration: none;
+}
+/* Avatar */
+.avatar-wrapper {
+    padding-top: 1.3em;
+}
+.avatar {
+    border-radius: 50%;
+}
 .contacts li a {
     color: #b5977c;
     transition: color 0.2s ease-in-out;
@@ -27,3 +40,122 @@ body {
     border-top: 0.3571428571428571em solid #c5bfb1;
     width: 33%;
 }
+
+ul.languages {
+    list-style: none;
+    padding-left: 0;
+}
+ul.languages > li:before {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.languages li{
+    display: flex;
+    flex-direction: row;
+
+}
+span.language {
+    margin-right: auto;
+    padding: 0;
+}
+
+/* Timeline*/
+
+.timeline-wrapper {
+    font-size: 12px;
+}
+
+.timeline {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 20px 6px 5px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 2px);
+    width: 4px;
+    background: #c5bfb1;
+    z-index: 0;
+}
+
+.timeline .timeline-block {
+    display: block;
+    position: relative;
+    background: #FFF;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.timeline .timeline-block::before {
+    content: '';
+}
+
+@media (min-width: 700px) {
+    .timeline {
+        padding-top: 50px;
+    }
+
+    .timeline .timeline-block {
+        width: calc(50% - 20px);
+        margin-right: 50%;
+        margin-top: -20px;
+    }
+
+    .timeline .timeline-block::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 7px);
+        display: block;
+        border: 4px solid #c5bfb1;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        z-index: 1;
+        background: #FFF;
+    }
+
+    .timeline .timeline-block::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 2px);
+        display: block;
+        width: 25px;
+        height: 4px;
+        background: #c5bfb1;
+        z-index: -1;
+    }
+
+    .timeline .timeline-block:nth-child(odd) {
+        margin-right: 0;
+        margin-left: calc(50% + 20px);
+    }
+
+    .timeline .timeline-block:nth-child(even)::before,
+    .timeline .timeline-block:nth-child(even)::after {
+        right: -27px;
+    }
+
+    .timeline .timeline-block:nth-child(odd)::after {
+        left: -27px;
+    }
+
+    .timeline .timeline-block:nth-child(odd)::before {
+        left: -4px;
+        width: 20px;
+    }
+}
+
+
