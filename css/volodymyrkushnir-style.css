@@ -108,14 +108,14 @@ ol {
 li {
     list-style: none outside none;
 }
-ul > li:before {
+/* ul > li:before {
     content: "●";
     font-family: "Arial";
     float: left;
     width: 1.5em;
     margin-left: -1.5em;
     text-align: center;
-}
+} */
 ol > li:before {
     content: counter(ol-counter);
     counter-increment: ol-counter;
