@@ -66,8 +66,9 @@ ul.education {
     list-style: none;
     padding-left: 0;
 }
-.education li a {
+.education li {
    font-size: 12px;
+   padding-bottom: 20px;
 }
 
 /* Timeline*/
